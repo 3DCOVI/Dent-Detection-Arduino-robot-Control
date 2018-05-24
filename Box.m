@@ -1,7 +1,8 @@
+%typical box object, stores the boundry coordinates and dimensions of edges in the dents
 classdef Box
     properties
-        x;
-        y;
+        x;%top left orgin x,y
+        y; 
         width;
         height;
        
@@ -16,7 +17,7 @@ classdef Box
         end
             
         function [xOut,yOut,widthOut,heightOut] = data(this)
-         
+         %simplify data extraction
             xOut = int16(this.x);
             yOut = int16(this.y);
             widthOut = int16(this.width);
